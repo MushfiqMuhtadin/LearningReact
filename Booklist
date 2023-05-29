@@ -1,0 +1,43 @@
+file name index.js
+
+import React from "react";
+import ReactDOM from "react-dom";
+
+function Booklist() {
+  return (
+    <div>
+      <Book />
+    </div>
+  );
+}
+
+const Book = () => {
+  return (
+
+    <article>
+
+      <Image />
+      <Author></Author>
+      <Price></Price>
+
+    </article>
+    
+  );
+};
+
+const Image = () => (
+  <img
+    src="https://ds.rokomari.store/rokomari110/ProductNew20190903/130X186/c72ea2adb_201720.jpg"
+    alt=""
+  />
+);
+
+const Author = () => (
+  <h3>Muhtadin Mushfiq</h3>
+);
+
+const Price = () => (
+  <h5>1000tk</h5>
+);
+
+ReactDOM.render(<Booklist />, document.getElementById('root'));
